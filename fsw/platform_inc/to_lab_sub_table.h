@@ -38,6 +38,7 @@
 #include "ci_lab_msgids.h"
 
 #include "sample_app_msgids.h"
+#include "proxy_msgids.h"
 
 #if 0
 #include "hs_msgids.h"
@@ -81,9 +82,11 @@ static TO_subscription_t TO_SubTable[] = {
     {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_APP_TLM_MID), {0, 0}, 4},
     {CFE_SB_MSGID_WRAP_VALUE(CFE_ES_MEMSTATS_TLM_MID), {0, 0}, 4},
 
-    {TO_UNUSED, {0, 0}, 0},
-    {TO_UNUSED, {0, 0}, 0},
-    {TO_UNUSED, {0, 0}, 0}};
+
+    {PROXY_HK_TLM_MID,       {0,0},  4},
+    {TO_UNUSED,              {0,0},  0},
+    {TO_UNUSED,              {0,0},  0}
+};
 
 /************************
 ** End of File Comment **
